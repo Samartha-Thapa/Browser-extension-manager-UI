@@ -1,0 +1,244 @@
+.background-container {
+    /* background-color: blue; */
+    background-image: linear-gradient(to bottom, #00001a, #000033, #00004d);
+    color: white;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.total-container{
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    margin-inline: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+}
+
+.top-container {
+    background-color: #1a1e2e;
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.toogle-img {
+    margin-right: 5px;
+}
+
+.hc1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.hc2-container {
+    display: flex;
+    gap: 14px;
+}
+
+.hc2 {
+    background-color: #1a1e2e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 0 0 0.3px white !important;
+}
+
+.hc2.active {
+    background-color: #ff5c5c;
+}
+
+.extensions-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 12px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    /* .extensions-container {
+        width: 100%;
+        display: none;
+    } */
+
+    .total-container{
+        max-width: 1200px;
+        margin: 20px !important;
+        margin-right: 50px !important;
+    }
+    
+    .top-container {
+        background-color: #1a1e2e;
+        width: 100%;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .head-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+ 
+    .hc2-container {
+        display: flex;
+        gap: 14px;
+        margin-top: 20px;
+    }
+
+    .extensions-list {
+        width: 100% !important;
+    }
+}
+
+.extensions-list {
+    background-color: #1a1e2e;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 140px;
+    width: 243px;
+    box-shadow: 0 0 0 0.3px white !important;
+}
+
+.exli-1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.exli-1 img{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.10);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.exli-1a {
+    margin-left: 15px;
+}
+
+.exli-1aa {
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.exli-1ab {
+    font-size: 13px;
+    color: #a0a0a0;
+    line-height: 1.4;
+}
+
+.remove-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.remove-btn {
+    border-radius: 20px !important;
+    box-shadow: 0 0 0 0.3px white !important;
+    padding: 8px;
+}
+
+.remove-btn-container button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.toogle {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.toogle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ff5c5c;
+}
+
+input:checked + .slider::before{
+    transform: translateX(20px);
+}
+
+.attribution {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #a0a0a0;
+}
+
+@media (max-width: 760) {
+    .total-container {
+        margin-inline: 20px;
+    }
+    
+    .head-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .extensions-container {
+        grid-template-columns: 1fr;
+    }
+}

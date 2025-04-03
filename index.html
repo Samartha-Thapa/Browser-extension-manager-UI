@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="background-container">
+  <div class="total-container">
+    <div class="top-container">
+      <img src="./assets/images/logo.svg" alt="extensions logo">
+      <div class="toogle-container">
+        <img src="./assets/images/icon-sun.svg" class="toogle-img" alt="dark/light logo" srcset="">
+      </div>
+    </div>
+    
+    <div class="head-container">
+      <div class="hc1">
+        Extensions List
+      </div>
+      <div class="hc2-container">
+        <div class="hc2" id="toggle-all">All</div>
+        <div class="hc2" id="toggle-active">Active</div>
+        <div class="hc2" id="toggle-inactive">Inactive</div>
+      </div>
+    </div>
+
+    <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+
+  <div class="extensions-container">
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-devlens.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              DevLens
+            </div>
+            <div class="exli-1ab">
+              Quickly inspect page layouts and visualize element boundaries.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-style-spy.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              StyleSpy
+            </div>
+            <div class="exli-1ab">
+              Instantly analyze and copy CSS from any webpage element.
+            </div>
+          </div>
+      </div>
+    <div class="remove-btn-container">
+      <button class="remove-btn">
+        Remove
+      </button>
+      <label class="toogle">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>      
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-speed-boost.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              SpeedBoost
+            </div>
+            <div class="exli-1ab">
+              Optimizes browser resource usage to accelerate page loading.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-json-wizard.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              JSONWizard
+            </div>
+            <div class="exli-1ab">
+              Formats, validates, and prettifies JSON responses in-browser.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-tab-master-pro.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              TabMaster Pro
+            </div>
+            <div class="exli-1ab">
+              Organizes browser tabs into groups and sessions.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-viewport-buddy.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              ViewportBuddy
+            </div>
+            <div class="exli-1ab">
+              Simulates various screen resolutions directly within the browser.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-markup-notes.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              Markup Notes
+            </div>
+            <div class="exli-1ab">
+              Enables annotation and notes directly onto webpages for collaborative debugging.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-devlens.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              GridGuides
+            </div>
+            <div class="exli-1ab">
+              Overlay customizable grids and alignment guides on any webpage.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-devlens.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              Palette Picker
+            </div>
+            <div class="exli-1ab">
+              Instantly extracts color palettes from any webpage.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-devlens.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              LinkChecker
+            </div>
+            <div class="exli-1ab">
+              Scans and highlights broken links on any page.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-devlens.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              DOM Snapshot
+            </div>
+            <div class="exli-1ab">
+              Capture and export DOM structures quickly.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="extensions-list">
+      <div class="exli-1">
+        <img src="/assets/images/logo-devlens.svg" alt="">
+          <div class="exli-1a">
+            <div class="exli-1aa">
+              ConsolePlus
+            </div>
+            <div class="exli-1ab">
+              Enhanced developer console with advanced filtering and logging.
+            </div>
+          </div>
+      </div>
+      <div class="remove-btn-container">
+        <button class="remove-btn">
+          Remove
+        </button>
+        <label class="toogle">
+          <input type="checkbox" checked>
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Samartha Thapa Magar</a>.
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
