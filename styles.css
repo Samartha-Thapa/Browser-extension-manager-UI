@@ -64,17 +64,12 @@
 .extensions-container {
     display: flex;
     flex-wrap: wrap;
-/*     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     grid-gap: 12px;
     width: 100%;
 }
 
 @media (max-width: 768px) {
-    /* .extensions-container {
-        width: 100%;
-        display: none;
-    } */
-
     .total-container{
         max-width: 1200px;
         margin: 20px !important;
@@ -118,7 +113,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 140px;
-    width: 230px;
+    width: 243px;
     box-shadow: 0 0 0 0.3px white !important;
 }
 
