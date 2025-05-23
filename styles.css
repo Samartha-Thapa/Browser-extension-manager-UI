@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('./assets/fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .background-container {
     /* background-color: blue; */
     background-image: linear-gradient(to bottom, #00001a, #000033, #00004d);
@@ -8,10 +26,8 @@
 
 .total-container{
     max-width: 1200px;
-    /* margin: 0 auto; */
-    margin-inline: 80px;
-    margin-right: 80px;
-    margin-top: 40px;
+    margin-inline: 9.5rem;
+    margin-top: 4rem;
 }
 
 .top-container {
@@ -70,6 +86,7 @@
 }
 
 @media (max-width: 768px) {
+
     .total-container{
         max-width: 1200px;
         margin: 20px !important;
@@ -84,7 +101,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
     }
 
     .head-container {
@@ -106,14 +122,14 @@
 }
 
 .extensions-list {
+    font-size: 1.3rem !important;
     background-color: #1a1e2e;
     border-radius: 15px;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 140px;
-    width: 243px;
+    width: 17.7rem;
     box-shadow: 0 0 0 0.3px white !important;
 }
 
@@ -218,8 +234,8 @@ input:checked + .slider::before{
 .attribution {
     margin-top: 40px;
     text-align: center;
-    font-size: 12px;
-    color: #a0a0a0;
+    font-size: 1rem;
+    color: yellow;
 }
 
 @media (max-width: 760) {
