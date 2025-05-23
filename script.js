@@ -5,7 +5,7 @@ const toggleInactive = document.getElementById('toggle-inactive');
 function allToogle() {
     toggleAll.classList.add('active');
     toggleActive.classList.remove('active');
-    toggleInactive.classList.remove('inactive');
+    toggleInactive.classList.remove('active');
 }
 
 function activeToogle() {
